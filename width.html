@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            background-color: rgba(255, 0, 0, 0.329);
+            /* width: max-content; */
+            /* width: min-content; */
+            width: fit-content;
+            /* font-size: 3vw; */
+            font-size: 2rem;
+            /* this means font size is twice of the browser font size. Default browser font size is 16px. So, 2rem means 32px. */
+
+        }
+        .child{
+            font-size: 2em;
+            /* this means font size is twice of the immediate parent font size */
+        }
+        h1{
+            border: 2px solid red;
+            width: fit-content;
+            margin: auto;
+            font-size: 5vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>I am doing a course in Programming Hero. I am doing a course in Programming Hero. I am doing a course in ProgrammingProgramming Hero. </p>
+        <div class="child">
+            I love web development.
+        </div>
+    </div>
+    <h1>Hello, Welcome to my website!</h1>
+</body>
+</html>
